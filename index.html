@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/logo.png" type="icon/png">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+
+<body>
+
+
+    <header >
+            <nav class="navbar navbar-expand-lg   py-5">
+                <div class="container">
+                    <div class="logo">
+                        <a class="navbar-brand" href="#">
+                            <img src="images/logo.png" alt="">
+                            <div class="logo-type">
+                                <h1 class="site-title">Weather</h1>
+                                <small class="site-description">tagline goes here</small>
+                            </div>
+                        
+                        </a>
+
+                    </div>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarNav">
+                    <ul class="navbar-nav ms-auto me-3 my-2">
+                      <li class="nav-item px-2  ">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link" href="#">Pricing</a>
+                      </li>
+                      <li class="nav-item px-2">
+                        <a class="nav-link  " href="#" >Contact</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </nav>
+    </header>
+
+
+    <section class="hero"> 
+        <div class="container">
+            <form class="find-location">
+                <input value="" type="text" placeholder="Find your location..." id="search" onkeyup="WeatherData(this.value);" onload="success(position)">
+                <input type="button" value="Find" id="submit">
+            </form>
+
+        </div>
+    </section>
+
+    <section class="whather container weatherContent">
+            <div class="row w-100 weathercards m-auto">
+                <div class="col-lg-4 col-md-12  "> 
+                    <div class="card-header-today d-flex justify-content-between">
+                        <div id="day-of-today" class="day">Sunday</div>
+                        <div id="dateNow" class="date">6August</div>
+                    </div>
+                    <div class="card-body-today">
+                        <div id="city" class="location">Cairo</div>
+                        <div class="degree d-flex align-items-center">
+                            <div  class="num d-flex ">
+                               <span id="degreeOfDay">33</span><sub>o</sub>C
+                            </div>
+                            <div class="weather-icon">
+                                <img id="img-today" src="images/sunny.png" alt="">
+                            </div>
+                        
+                        </div>
+                        <div id="weatherText" class="custom">Sunny</div>
+                        <div class="card-footer w-100 ms-auto">
+                            <span class="card-buttom">
+                                <i class="fa-solid fa-umbrella"></i>
+                                20%
+                            </span>
+                            <span class="card-buttom">
+                                <i  class="fa-solid fa-wind"></i>
+                                <span id="wind"> </span>
+                                                    
+                            </span>
+                            <span class="card-buttom">
+                                <i class="fa-solid fa-compass"></i>    
+                                <span id="wind-direction"></span>                            
+
+                            </span> 
+                        </div>
+
+
+
+                    </div>
+                   
+                </div>
+                <div class="col-lg-4 col-md-12 next-day "> 
+                        <div class="next-day-header">
+                            <div id="nextDay" class="day">Monday</div>
+                        </div>
+                        <div class="next-day-body">
+                            <div class="next-day-icon">
+                                <img id="day2icon" src="images/sunny.png" alt="">
+                            </div>
+                            <div class="degree">
+                                <span id="degreeOfNextDay">30<sup>o</sup>C
+                            </div>
+                            <small>
+                                27.9<sup>o</sup>
+                            </small>
+                            <div id="textOfNextDay" class="custom">Sunny</div>
+                        </div>
+                </div>
+                <div class="col-lg-4 col-md-12 "> 
+                    <div class="card-header-third-day">
+                        <div id="nextNextDay" class="day">Tuesday</div>
+                    </div>
+                    <div class="card-body-third-day">
+                        <div class="next-day-icon day3Icon">
+                            <img src="images/sunny.png" alt="">
+                        </div>
+                        <div class="degree">
+                            <span id="degreeOfNextnextDay">30<sup>o</sup>C
+                        </div>
+                        <small>
+                            26.7<sup>o</sup>
+                        </small>
+                        <div id="textOfNextnextDay" class="custom">Sunny</div>
+
+                    </div>
+                </div>
+
+        </div>
+            
+
+
+    </section>
+
+    <footer class="site-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 py-2 ">
+                    <form action="#" class="subscribe-form ">
+                        <input type="text" placeholder="Enter your email to subscribe...">
+                        <input type="submit" value="Subscribe">
+                    </form>
+                </div>
+                <div class="col-md-4 py-3 ">
+                    <div class="social-links ">
+                        <a href="#"> 
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#"> 
+                            <i class="fa-brands fa-twitter"></i>                        
+                        </a>
+                        <a href="#"> 
+                            <i class="fa-brands fa-google"></i>
+                        </a>
+                        <a href="#"> 
+                            <i class="fa-brands fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="d-flex justify-content-center">
+                <p class="colophon">Copyright 2023 . Designed by Abdulrahman Awad. All rights reserved</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

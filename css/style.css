@@ -1,0 +1,316 @@
+nav{
+ background-color: #1E202B;   
+ color: #fff !important;
+ z-index: 999;
+}
+nav a {
+    color: #fff !important;
+
+}
+* {
+    box-sizing: border-box;
+}
+/* header {
+    height: 100vh;
+} */
+body {
+    color: #bfc1c8;
+    font-family: "Roboto", "Open Sans", sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 1.5;
+    background: #1e202b;
+}
+
+.navbar-toggler-icon {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    vertical-align: middle;
+    background-image: url(../images/269dd16fa1f5ff51accd09e7e1602267.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+.navbar-toggler:hover {
+
+    border: 2px solid #009ad8 ;
+
+}
+ .logo-type {
+    display: inline-block;
+    vertical-align: middle;
+}
+ .site-title {
+    margin-bottom: 3px;
+    font-size: 14px;
+    font-size: 1.1428571429em;
+    color: white;
+}
+ .site-description {
+
+    font-size: 0.5em;
+    display: block;
+    color: #bfc1c8;
+ }
+nav ul li a {
+    padding: 5px 25px !important;
+    border: 2px solid transparent !important;
+    border-radius: 30px !important;
+    color: white !important;
+    -webkit-transition: 0.3s ease !important;
+    transition: 0.3s ease !important;
+    font-weight: 400 !important;
+}
+nav ul li a:hover {
+    border-color: #009ad8 !important;
+    color: #009ad8 !important;
+}
+nav ul li a.active {
+    border-color: #009ad8 !important;
+    color: #009ad8 !important;
+}
+
+.hero {
+    background-size: cover;
+    padding: 70px 0;
+    min-height: 350px;
+    background-image :url(../images/banner.png)
+}
+.find-location {
+    position: relative;
+    margin-bottom: 70px;
+}
+.find-location input[type="text"] {
+    width: 100%;
+    padding: 20px 50px 20px 20px;
+    background: #1e202b;
+    color: white;
+}
+form input, form textarea, form select {
+    outline: none;
+    border: none;
+    padding: 10px;
+    border-radius: 30px;
+}
+button, input {
+    line-height: normal;
+}
+button, input, select, textarea {
+    font-family: inherit;
+    font-size: 100%;
+    margin: 0;
+    vertical-align: baseline;
+}
+.find-location input[type="submit"], .find-location input[type="button"] {
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    padding: 0 40px;
+}
+.button, form input[type="submit"], form input[type="button"], form button, form input[type="reset"] {
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+button, html input[type="button"], input[type="reset"], input[type="submit"] {
+    -webkit-appearance: button;
+    cursor: pointer;
+}
+.whather {
+    padding-left:0 !important ;
+    padding-right: 0 !important;
+    margin: auto;
+}
+.weatherContent {
+    width: 100%;
+    background: #323544;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: -150px;
+    margin-bottom: 50px;
+}
+.card-header-today {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+.weathercards>* {
+    overflow: hidden;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+
+}
+.card-body-today {
+    text-align: left;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding: 30px 20px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+}
+.location {
+    font-size: 18px;
+    font-size: 1.2857142857em;
+    font-weight: 400;
+}
+.degree {
+    font-size: 24px;
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+.num
+ {
+    font-size: 90px;
+    font-size: 4.4285714286rem;
+    margin-right: 30px;
+    display: inline-block;
+    vertical-align: middle;
+    margin-top: 5px;
+ }
+ sup {
+    top: -0.5em;
+}
+ sub, sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+.weather-icon img {
+    width: 50px;
+}
+.custom {
+    color: #009ad8;
+    margin: 20px 0;
+}
+.card-buttom i {
+    font-size: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+.card-buttom {
+    margin: 10px;
+}
+.next-day {
+    background-color: #262936;
+}
+.next-day-header {
+    background: rgba(0, 0,0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 400;
+}
+.next-day-icon img {
+    width: 40px;
+}
+.next-day-icon {
+    margin-bottom: 20px;
+}
+.next-day-body {
+    padding: 50px 20px 10px;
+    text-align: center;
+}
+.next-day-body .degree {
+    font-size: 24px;
+    font-size: 1.7142857143em;
+    color: white;
+    font-weight: 700;
+}
+.card-header-third-day {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    font-weight: 4
+}
+.card-body-third-day {
+    padding: 50px 20px 10px;
+    text-align: center;
+}
+
+footer {
+    background: #262936;
+    padding: 50px 0;
+}
+.site-footer .subscribe-form {
+    position: relative;
+    margin-bottom: 30px;
+}
+.site-footer .subscribe-form input[type="text"] {
+    padding: 20px 100px 20px 20px;
+    background: #1e202b;
+    width: 100%;
+    color: white;
+}
+
+.site-footer .subscribe-form input[type="submit"] {
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+}
+.button, form input[type="submit"], form input[type="button"], form button, form input[type="reset"] {
+    border: none;
+    background: #009ad8;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: white;
+}
+.site-footer .social-links a {
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    -webkit-transition: 0.3s ease;
+    transition: 0.3s ease;
+    font-size: 20px;
+    font-size: 1.4285714286em;
+    margin-left: 15px;
+}
+.site-footer .social-links a:hover {
+    background: #009ad8;
+    color: white;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    }
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
+
+
+
+
+@media screen and (max-width : 920px) {
+    .social-links {
+        display: flex;
+        justify-content: center;
+        }
+    
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    border: 2px  solid #ffffff;
+    box-shadow: unset;
+
+}
